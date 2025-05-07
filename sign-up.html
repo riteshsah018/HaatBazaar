@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .signup-container {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .signup-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .signup-btn:hover {
+            background: #219150;
+        }
+        .terms {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .terms a {
+            color: #27ae60;
+            text-decoration:none;
+        }
+        .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-link a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Register</h2>
+        <form id="signupForm">
+            <input type="text" class="input-field" name="username" placeholder="Enter your Name" required>
+            <input type="tel" class="input-field" name="phone-number" placeholder="Phone Number" required>
+            <input type="email" class="input-field" name="email-id" placeholder="Email ID" required>
+            <input type="password" class="input-field" name="password" placeholder="Create Password" required>
+            <input type="password" class="input-field" name="confirm-password" placeholder="Confirm Password" required>
+            <p class="terms">
+                By continuing, you agree to <strong>HaatBazaar</strong>' 
+                <a href="conditionofuse.html">Conditions of Use</a> and <a href="privacyPolicy.html">Privacy Notice</a>.
+            </p>
+            <button type="submit" class="signup-btn">Sign Up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="sign-in.html">Log In</a></p>
+    </div>
+
+</body>
+</html>
